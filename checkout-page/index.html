@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Happy Manatee Crochets Checkout Page</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+            <img alt="A crocheted, amigurumi, firefly doll with a brown body and bright yellow bottom, holds a pink heart in its legs. " src="/images/forever-firefly.jpg">
+            <h3>Forever Firefly</h3>
+            <p>$25.00</p>
+
+            <img alt="A crocheted, amigurumi, cremulon doll made with lime colored bernat blanket yarn. " src="/images/rickandmorty.jpg">
+            <h3>Lime Cremulon</h3>
+            <p>$25.00</p>
+
+            <img alt="A crocheted, amigurumi, Pikachu doll in a Santa Claus sack wearing a Santa hat" src="/images/pikachu.jpg">
+            <h3>Pikachu in Santa's Sack</h3>
+            <p>$25.00</p>
+
+            <img alt="A crocheted, amigurumi, Teenage Mutant Ninja Turtle's Leonardo doll with blue bands and a blue band around the eyes. " src="/images/leonardo.jpg">
+            <h3>TMNT's Leonardo</h3>
+            <p>$25.00</p>
+
+            <img alt="Crocheted, amigurumi, dinosaur chicken nugget dolls placed around Knotty Ball yarn." src="/images/chickienuggies.jpg">
+            <h3>Chicken Nuggies</h3>
+            <p>$25.00</p>
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+            <form>
+                <label for="card-name">Card Name
+                    <span aria-hidden="true">*</span>
+                </label>
+                <input required placeholder="John Doe" required id="card-name" name="card-name" type="text">
+                
+                <label for="card-number">Card Number
+                    <span aria-hidden="true">*</span>
+                </label>
+                <input required placeholder="1234567890123456" aria-describedby="card-number-help" required id="card-number" name="card-number" type="text">
+                
+                <p id="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+
+                <label for="expiry-date">Expiry Date
+                    <span aria-hidden="true">*</span>
+                </label>
+                <input required placeholder="01/2020" required id="expiry-date" name="expiry-date" type="text">
+
+                <label for="cvv">CVV
+                    <span aria-hidden="true">*</span>
+                </label>
+                <input required placeholder="123" required id="cvv" name="cvv" type="text">
+                <button type="submit">Submit</button>
+            </form>
+    </section>
+
+</body>
+
+</html>

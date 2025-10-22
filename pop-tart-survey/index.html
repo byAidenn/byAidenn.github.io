@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <h1 id="title">Pop-Tarts</h1>
+      <p id="description">After yearbook students started casually asking athletes—from cross country runners to football players—about their favorite Pop-Tart flavor, it quickly became a fun tradition. To finally settle the debate, we've created this survey. Share your go-to flavor, and by the end of the year we'll know which Pop-Tart reigns supreme! </p>
+      <form id="survey-form">
+        <fieldset>
+
+          <legend>Personal Information</legend>
+          <label for="name" id="name-label">Name (required):</label>
+          <input required id="name" type="text" name="name" placeholder="Ex. John Doe" size="20">
+          
+          <label for="email" id="email-label">Email Address (required):</label>
+          <input required id="email" type="email" name="email" size="20" placeholder="example@email.com">
+          
+          <label for="number" id="number-label">Age (optional):</label>
+          <input id="number" type="number" name="age" placeholder="17" min="1" max="100">
+        
+        </fieldset>
+
+        <fieldset>
+          <legend>Which Pop-Tart flavor is your favorite?</legend>
+            <select id="dropdown">
+             <option value="strawberry" name="flavor">Strawberry</option>
+             <option value="brown-sugar-cinnamon" name="flavor">Brown Sugar Cinnamon</option>
+             <option value="cookies-cream" name="flavor">Cookies & Cream</option>
+             <option value="smores" name="flavor">S'mores</option>
+             <option value="wild-berry" name="flavor">Wild Berry</option>
+             <option value="other" name="flavor">Other</option>
+            </select>
+            <label for="other">Other:</label>
+            <input id="other-flavor" type="text" name="flavor" placeholder="Frosted Blueberry" size="25">
+        </fieldset>
+
+        <fieldset>
+  <legend>How do you eat your Pop-Tarts?</legend>
+
+  <div>
+    <input type="radio" id="wrapper" name="prep" value="wrapper">
+    <label for="wrapper">Straight from the wrapper</label>
+  </div>
+
+  <div>
+    <input type="radio" id="toasted" name="prep" value="toasted">
+    <label for="toasted">Toasted</label>
+  </div>
+
+  <div>
+    <input type="radio" id="mood" name="prep" value="mood">
+    <label for="mood">Depends on my mood</label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>What sport(s) do you play?</legend>
+
+  <div>
+    <input type="checkbox" id="cross-country" name="sports" value="cross-country">
+    <label for="cross-country">Cross Country</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="football" name="sports" value="football">
+    <label for="football">Football</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="basketball" name="sports" value="basketball">
+    <label for="basketball">Basketball</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="soccer" name="sports" value="soccer">
+    <label for="soccer">Soccer</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="none" name="sports" value="none">
+    <label for="none">None</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="other" name="other" value="other">
+    <label for="other">Other</label>
+  </div>
+
+  <div>
+    <label for="other-sport">Other:</label>
+    <input id="other-sport" type="text" name="sports" placeholder="Tennis" size="25">
+  </div>
+</fieldset>
+
+        <fieldset>
+          <label for="comments">Why do you like this flavor?</label>
+
+          <textarea cols="30" rows="20" name="comments" id="comments"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+  </body>
+</html>

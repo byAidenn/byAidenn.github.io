@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>byAidenn Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aidenn's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">byAidenn</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>byAidenn Portfolio</h1>
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hi, I'm Aidenn.</h2>
+      <p class="tagline">Just creating cool things on the web.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-<section id="projects">
-  <h2>My Projects</h2>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a creative web developer who enjoys bringing ideas to life through design and code.
+      My work blends playful color with a modern, techy aesthetic — because coding should feel as fun as it is powerful.
+      Every project I build is a chance to learn something new and make the web a little more interesting.
+    </p>
+  </section>
 
-  <div class="project">
-    <h3>Tribute Page</h3>
-    <p>A responsive HTML/CSS page built as part of FreeCodeCamp's Responsive Web Design course.</p>
-    <p><strong>Technologies:</strong> HTML, CSS | Developed using FreeCodeCamp</p>
-    <a href="https://byAidenn.github.io/tribute-page" target="_blank">View Live</a>
-    <img src="images/tribute-page-screenshot.png" alt="Screenshot of Tribute Page">
-  </div>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/checkout-screenshot.png" alt="Checkout Page Project Screenshot">
+        <h3>Checkout Page</h3>
+        <p>A clean, responsive checkout page built for user-friendly design practice.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/grannys-recipe-screenshot.png" alt="Granny's Recipe Project Screenshot">
+        <h3>Granny’s Recipe</h3>
+        <p>A cozy recipe webpage celebrating classic cooking with modern layout and colors.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/pop-tart-survey-screenshot.png" alt="Pop-Tart Survey Project Screenshot">
+        <h3>Pop-Tart Survey</h3>
+        <p>A playful, form-based project exploring accessibility and input styling.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>Survey Form</h3>
-    <p>A responsive survey form using HTML5 and CSS3, fully validated and styled.</p>
-    <p><strong>Technologies:</strong> HTML, CSS, JavaScript | Developed using FreeCodeCamp</p>
-    <a href="https://byAidenn.github.io/survey-form" target="_blank">View Live</a>
-    <img src="images/survey-form-screenshot.png" alt="Screenshot of Survey Form">
-  </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>If you’d like to collaborate or just say hi, feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:byaidenn@gmail.com" class="btn">Email Me</a>
+      <!-- Uncomment if you want to add LinkedIn later -->
+      <!-- <a href="https://www.linkedin.com/in/your-linkedin-username" class="btn">LinkedIn</a> -->
+    </div>
+  </section>
 
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:byaidenn@gmail.com">byaidenn@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/byAidenn" target="_blank">byAidenn</a></p>
-</section>
-
-<footer>
-  &copy; 2025 byAidenn
-</footer>
-
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 byAidenn. Built with 💛 and caffeine.</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,121 @@
+/* Reset default spacing */
+body, h1, p, fieldset, legend, label {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'A Love of Thunder';
+  src: url('fonts/A Love of Thunder.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;    
+}
+
+/* Base styles */
+body {
+  font-family: 'A Love of Thunder', 'Trebuchet MS', sans-serif;
+  background: #0c23f3;
+  padding: 2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Title and description */
+h1 {
+  font-family: 'A Love of Thunder', 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
+  color: #0c23f3;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+#description {
+  font-size: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-left: 5px solid #ffffff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Form styling */
+form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Fieldsets */
+fieldset {
+  border: 2px dashed #000000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  color: #0c23f3;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Labels and inputs */
+fieldset div {
+  margin-bottom: 0.5rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #0c23f3;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Submit button */
+button {
+  background-color: #0c23f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+}
